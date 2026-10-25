@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 
 :root {
 --primary-color: #1985a1;
@@ -7,7 +8,15 @@ font-family:  "Permanent Marker", cursive;;
 
 h1 {
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 500;
+}
+
+h2,
+button,
+.btn {
+    font-family: "Rubik Spray Paint", system-ui;
+     font-weight: 500;
 }
 
 header {
@@ -16,14 +25,15 @@ header {
     justify-content: center;
     text-align: center;
     border: 2px white;
-     height: 42px;
-      padding: 2px;
-       border-top: 0px;
-        border-right: 0px;
-         border-left: 0px; 
-         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-         background-color: var(--primary-color);
-          top: 0px;
+    height: 22px;
+    padding: 2px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px; 
+    font-family: "Rubik Spray Paint", system-ui;
+     font-weight: 500;
+    background-color: #0e927c;
+    top: 0px;
 }
 
 .card img{
@@ -50,10 +60,8 @@ header {
     font-size: 20px;
     border-radius: 15px;
     text-decoration: none;
-    color: black;
+    color: rgb(247, 245, 245);
     background-color: cornflowerblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
 
  .btn-group {
@@ -86,6 +94,17 @@ header {
     height: auto;
 }
 
+.card:hover {
+    border-top-width: 10px;
+   border-right-width: 10px;
+   border-bottom-width: 0px;
+   border-left-width: 0px;
+   border-top-color: blue;
+   border-right-color: blue;
+   transform: translateY(-2px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 .card h2 {
     margin-top: 1px;
 }
@@ -94,6 +113,7 @@ header {
 body{
     background-color:#88d498;
     margin: 0;
+    color: white;
 }
 
 nav ul {
@@ -109,9 +129,9 @@ border: 2px;
 padding: 12px 12px;
 border-radius: 20px;
 text-decoration: none;
-color: white;
 background-color:var(--primary-color);
 font-weight: 1000;
+color: white;
 }
 
 nav a:hover {
@@ -134,4 +154,14 @@ nav a:hover {
         flex: 0 1 auto;
         width: 100%;
     }
+}
+
+#Games {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    border: 2px transparent;
+    background-color: #0e927c;
 }
