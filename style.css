@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap');
+
+:root {
+--primary-color: #1985a1;
+font-family:  "Permanent Marker", cursive;;
+ }
+
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px white;
+     height: 42px;
+      padding: 2px;
+       border-top: 0px;
+        border-right: 0px;
+         border-left: 0px; 
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         background-color: var(--primary-color);
+          top: 0px;
+}
+
+.card img{
+    display: block;
+    max-width: 100%;
+    height: 180px;
+    width: auto;
+    object-fit: contain;
+    border: 2px solid;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.btn {
+    width: 50px;
+    gap: 10px;
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    padding: 8px 8px;
+    font-size: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+ .btn-group {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 255);
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    box-sizing: border-box;
+    max-width: 400px;
+    flex: 1 1 300px;
+    height: auto;
+    padding: 20px;
+    background-color:var(--primary-color);
+    border-radius: 20px;
+    height: auto;
+}
+
+.card h2 {
+    margin-top: 1px;
+}
+
+
+body{
+    background-color:#88d498;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+nav a{
+border: 2px;
+padding: 12px 12px;
+border-radius: 20px;
+text-decoration: none;
+color: white;
+background-color:var(--primary-color);
+font-weight: 1000;
+}
+
+nav a:hover {
+    background-color: #1985a1;
+    color: mediumspringgreen;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+}
